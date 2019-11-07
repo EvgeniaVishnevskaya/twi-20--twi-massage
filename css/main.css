@@ -1,0 +1,166 @@
+@import "reset.css";
+@import url('https://fonts.googleapis.com/css?family=Fira+Code:400,700&display=swap&subset=cyrillic-ext');
+
+body{
+  font-family: 'Fira Code', monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #E5E5E5;
+}
+nav{
+  position: fixed;
+  left: calc((100vw - 600px) / 2);
+  transform: translateX(-110%);
+  padding: 24px 32px 0px 0px;
+
+}
+nav ul li{
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  width: 176px;
+  height: 60px;
+}
+.nav__icon{
+  width: 28px;
+  height: 28px;
+  background: #000;
+
+}
+.nav__icon--home{
+  mask: url(../img/home-icn.svg);
+  -webkit-mask: url(../img/home-icn.svg);
+}
+nav ul li:hover{
+  color: #0038FF;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 50px;
+
+}
+nav ul li:hover .nav__icon--home{
+  background: #0038FF;
+}
+.nav__icon--bell{
+  mask: url(../img/bell-icn.svg);
+  -webkit-mask: url(../img/bell-icn.svg);
+}
+nav ul li:hover .nav__icon--bell{
+  background: #0038FF;
+}
+.nav__icon--chat{
+  mask: url(../img/chat-icn.svg);
+  -webkit-mask: url(../img/chat-icn.svg);
+}
+nav ul li:hover .nav__icon--chat{
+  background: #0038FF;
+}
+.nav__icon--bookmark{
+  mask: url(../img/bookmark-icn.svg);
+  -webkit-mask: url(../img/bookmark-icn.svg);
+}
+nav ul li:hover .nav__icon--bookmark{
+  background: #0038FF;
+}
+nav a{
+
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+nav div{
+  background-color: #0038FF;
+  box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.25);
+  width: 216px;
+  height: 53px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+aside {
+  position: fixed;
+  right: calc((100vw - 600px) / 2);
+  transform: translateX(101.5%);
+  width: 600px;
+  min-height: 110vh;
+  margin: 0 auto;
+  border-left: 1px solid rgba(0, 0, 0, 0.25);
+  border-right: 1px solid rgba(0, 0, 0, 0.25);
+  padding-bottom: 10vh;
+
+}
+
+aside header a{
+  text-decoration: none;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.massage{
+  margin-top: 20px;
+}
+/*MAIN*/
+
+main{
+  width: 600px;
+  min-height: 100vh;
+  margin: 0 auto;
+  border-left: 1px solid rgba(0, 0, 0, 0.25);
+  border-right: 1px solid rgba(0, 0, 0, 0.25);
+  padding-bottom: 10vh;
+
+}
+.main__header{
+ display: flex;
+ justify-content: space-between;
+ align-content: center;
+ padding: 16px;
+ border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+.main__header h2{
+  font-weight: bold;
+  font-size: 20px;
+}
+.story{
+  padding: 24px 32px 16px 24px;
+  display: flex;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+.story__user__ava{
+  width: 56px;
+  height: 56px;
+  margin-right: 16px;
+}
+.story__body__header{
+  display: flex;
+  align-items: center;
+}
+.story__body__header *{
+  margin-right: 16px;
+}
+.story__body__header h3{
+  font-weight: bold;
+  font-size: 20px;
+}
+.story__body__header a,
+.story__body__header span {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.story__body__header a{
+  text-decoration: none;
+}
+.story__body p{
+  font-size: 16px;
+  line-height: 24px;
+  padding-top: 8px;
+  padding-bottom: 17px;
+}
+.story:nth-child(3){
+  background-color: #F2F3ED;
+  border-right: 3px solid #0038FF;
+}
